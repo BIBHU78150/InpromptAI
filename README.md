@@ -16,7 +16,7 @@
 - **Frontend:** React, Vite, Tailwind CSS, Lucide React, React Markdown.
 - **Backend:** Python, FastAPI, Uvicorn, AsyncOpenAI, Regex.
 - **Database / Auth:** Supabase.
-- **AI Inference:** Deployed powerful generative LLMs (Gemma-2, Sarvam) running locally accelerated by NVIDIA GPUs utilizing CUDA cores.
+- **AI Inference:** Deployed powerful generative LLMs (Gemma-2, Sarvam) hosted on our backend server accelerated by NVIDIA GPUs utilizing CUDA cores.
 - **Security Engine:** Custom heuristic and user-intent analysis model.
 
 ## Project Structure 📁
