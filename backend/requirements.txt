@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+pinecone
+langchain
+huggingface_hub
+numpy
+pydantic-settings
+python-dotenv
+supabase
+openai
