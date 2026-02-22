@@ -84,4 +84,13 @@ Start the frontend UI:
 npm run dev
 ```
 
+
 Access the application at `http://localhost:5173`.
+
+## Screenshots 📸
+
+![Screenshot 1](frontend/screenshots/1.png)
+![Screenshot 2](frontend/screenshots/2.png)
+![Screenshot 3](frontend/screenshots/3.png)
+![Screenshot 4](frontend/screenshots/4.png)
+![Screenshot 5](frontend/screenshots/5.png)
