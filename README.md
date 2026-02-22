@@ -38,7 +38,7 @@ InpromptAI/
 - Node.js (v18+)
 - Python (3.10+)
 - Supabase Project (URL & Anon Key)
-- NVIDIA API Keys
+- NVIDIA GPU Instance (CUDA enabled)
 
 ### 1. Backend Setup
 Navigate into the backend directory and configure the environment:
