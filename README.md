@@ -4,6 +4,11 @@
 
 ## Features 🚀
 - **Pre-Chat Security Scan:** Intercepts prompts and analyzes them using our own custom-built heuristic and intent-detection model to identify malicious intent, jailbreaks, and PII leaks before allowing the request to proceed.
+- **Custom Security Heuristics Logic:**
+  - **Malicious Keyword Detection:** Scans for exploitation terms like `"jailbreak"`, `"ignore previous"`, `"sql injection"`, `"xss"`, and `"exploit"`.
+  - **Context-Aware Benign Overrides:** Intelligently understands user intent. If a developer asks `"how to prevent sql injection"`, the system detects benign educational context (`"how to prevent"`, `"mitigation"`, `"educational purpose"`) and bypasses the strict block.
+  - **Obfuscation & DoS Prevention:** Detects Base64 encoded payload smuggling and strictly limits prompt length to prevent Denial of Service attacks.
+  - **Violence & Harm Filtering:** Strict zero-tolerance blocking for physical harm and violence keywords.
 - **Multi-Model Support:** Seamlessly switch between different LLM engines:
   - 🛡️ **Analyze Only (Fast)** - Rapid threat detection.
   - ✨ **Google Gemma-2 27B** - High-quality chat and coding assistance.
