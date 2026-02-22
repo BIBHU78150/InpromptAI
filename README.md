@@ -16,7 +16,7 @@
 - **Frontend:** React, Vite, Tailwind CSS, Lucide React, React Markdown.
 - **Backend:** Python, FastAPI, Uvicorn, AsyncOpenAI, Regex.
 - **Database / Auth:** Supabase.
-- **AI Inference:** Deployed powerful generative LLMs (Gemma-2, Sarvam) executed on NVIDIA GPUs via NVIDIA NIM APIs.
+- **AI Inference:** Deployed powerful generative LLMs (Gemma-2, Sarvam) running locally accelerated by NVIDIA GPUs utilizing CUDA cores.
 - **Security Engine:** Custom heuristic and user-intent analysis model.
 
 ## Project Structure 📁
@@ -45,9 +45,9 @@ pip install -r requirements.txt
 
 Create a `.env` file in the `backend` directory:
 ```env
-# NVIDIA API Keys (Deployed LLMs on NVIDIA GPUs)
-NVIDIA_API_KEY_1="your-nvidia-api-key-1"  # Used for Gemma-2 Chat Generation
-NVIDIA_API_KEY_2="your-nvidia-api-key-2"  # Used for Sarvam Chat Generation
+# Local NVIDIA GPU Runtime Configuration
+NVIDIA_API_KEY_1="your-local-gpu-auth-1"  # Used for Gemma-2 Chat Generation execution context
+NVIDIA_API_KEY_2="your-local-gpu-auth-2"  # Used for Sarvam Chat Generation execution context
 
 # Supabase (Optional for Database Logging)
 SUPABASE_URL="your-supabase-url"
