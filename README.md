@@ -3,7 +3,7 @@
 **Inprompt AI** is an advanced, multi-model Large Language Model (LLM) security gateway and chat interface. It acts as an intelligent proxy between users and generative AI models, automatically analyzing prompts for malicious intent, PII leaks, and jailbreak attempts before allowing the generation to proceed.
 
 ## Features 🚀
-- **Pre-Chat Security Scan:** Intercepts prompts and analyzes them using Google Gemma-2 for harmful content, jailbreaks, and PII leaks.
+- **Pre-Chat Security Scan:** Intercepts prompts and analyzes them using our own custom-built heuristic and intent-detection model to identify malicious intent, jailbreaks, and PII leaks before allowing the request to proceed.
 - **Multi-Model Support:** Seamlessly switch between different LLM engines:
   - 🛡️ **Analyze Only (Fast)** - Rapid threat detection.
   - ✨ **Google Gemma-2 27B** - High-quality chat and coding assistance.
@@ -16,7 +16,8 @@
 - **Frontend:** React, Vite, Tailwind CSS, Lucide React, React Markdown.
 - **Backend:** Python, FastAPI, Uvicorn, AsyncOpenAI, Regex.
 - **Database / Auth:** Supabase.
-- **AI Inference:** NVIDIA NIM APIs (Gemma-2, Sarvam).
+- **AI Inference:** Deployed powerful generative LLMs (Gemma-2, Sarvam) executed on NVIDIA GPUs via NVIDIA NIM APIs.
+- **Security Engine:** Custom heuristic and user-intent analysis model.
 
 ## Project Structure 📁
 ```text
@@ -44,8 +45,7 @@ pip install -r requirements.txt
 
 Create a `.env` file in the `backend` directory:
 ```env
-# NVIDIA API Keys
-NVIDIA_API_KEY="your-nvidia-api-key"      # Used for Security prompt scanning (Gemma)
+# NVIDIA API Keys (Deployed LLMs on NVIDIA GPUs)
 NVIDIA_API_KEY_1="your-nvidia-api-key-1"  # Used for Gemma-2 Chat Generation
 NVIDIA_API_KEY_2="your-nvidia-api-key-2"  # Used for Sarvam Chat Generation
 
