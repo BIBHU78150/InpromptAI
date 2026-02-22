@@ -7,7 +7,7 @@
 - **Multi-Model Support:** Seamlessly switch between different LLM engines:
   - 🛡️ **Analyze Only (Fast)** - Rapid threat detection.
   - ✨ **Google Gemma-2 27B** - High-quality chat and coding assistance.
-  - 🌐 **Sarvam-M** - Native support for Indic/regional languages and mathematics.
+  - 🌐 **Sarvam-M** - Native support for Indian/regional languages and mathematics.
 - **Regional Language Fluency:** Automatically detects Indian regional languages (Hindi, Odia, Bengali, etc.) and forces the AI models to respond fluently in the same language.
 - **Rich Markdown UI:** Code blocks are beautifully rendered with terminal-style syntax highlighting (VSCode Dark Plus) and fully responsive mobile layouts.
 - **Session History:** Securely saves chat sessions using Supabase authentication and database scaling.
